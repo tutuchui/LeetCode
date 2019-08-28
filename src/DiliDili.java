@@ -14,5 +14,6 @@ public class DiliDili extends BiliBili {
         BiliBili b = new DiliDili();
         System.out.println(b.name);
         b.b();
+        System.out.println((int) 3/2);
     }
 }
