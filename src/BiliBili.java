@@ -5,6 +5,10 @@ public class BiliBili {
          static {
              System.out.println("Father Static");
          }
+    {
+        System.out.println("Father Normal");
+    }
+
 
          public BiliBili(){
              System.out.println("Father Construct");
