@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4d28897-4b52-44f2-8d52-33cada3814ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AroundArea.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinarySearchRotateArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FindPeakElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MySqrt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FirstAndLast.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCodeFighting/BiliBili.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCodeFighting/BiliBili.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCodeFighting/BinarySearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCodeFighting/BinarySearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCodeFighting/DiliDili.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCodeFighting/DiliDili.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCodeFighting/IsSymmetricBinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCodeFighting/IsSymmetricBinaryTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiliBili.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiliBili.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DiliDili.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DiliDili.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TreeLevelOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TreeLevelOrder.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,20 +62,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FindPeakElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+            <state relative-caret-position="120">
+              <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+              <folding>
+                <element signature="e#74#75#0" expanded="true" />
+                <element signature="e#97#98#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NumIsLand.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/FirstAndLast.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+            <state relative-caret-position="510">
+              <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -145,12 +137,13 @@
         <option value="$PROJECT_DIR$/src/BinarySearch.java" />
         <option value="$PROJECT_DIR$/src/BinarySearchRotateArray.java" />
         <option value="$PROJECT_DIR$/src/FindPeakElement.java" />
+        <option value="$PROJECT_DIR$/src/FirstAndLast.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="66" />
-    <option name="y" value="131" />
+    <option name="x" value="142" />
+    <option name="y" value="23" />
     <option name="width" value="1234" />
     <option name="height" value="777" />
   </component>
@@ -245,15 +238,15 @@
       <workItem from="1566807944933" duration="1593000" />
       <workItem from="1566987441999" duration="10233000" />
       <workItem from="1567321221038" duration="7873000" />
-      <workItem from="1567412081044" duration="8179000" />
+      <workItem from="1567412081044" duration="10231000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27969000" />
+    <option name="totallyTimeSpent" value="30021000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="177" y="244" width="1234" height="777" extended-state="0" />
+    <frame x="142" y="23" width="1234" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17365772" />
@@ -265,7 +258,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3708029" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3708029" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -404,8 +397,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FindPeakElement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        <state relative-caret-position="120">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+          <folding>
+            <element signature="e#74#75#0" expanded="true" />
+            <element signature="e#97#98#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FirstAndLast.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
         </state>
       </provider>
     </entry>
