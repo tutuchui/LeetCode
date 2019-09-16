@@ -14,7 +14,7 @@ public class BiliBili {
              System.out.println("Father Construct");
          }
 
-    public void b(){
+    private void b(){
         System.out.println("Father");
     }
 }

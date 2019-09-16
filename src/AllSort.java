@@ -12,6 +12,7 @@ public class AllSort {
         }
         System.out.println();
     }
+    //Quick Sort
     public void quickSort(int[] a, int low, int high){
        if(low > high){
            return;
@@ -28,7 +29,7 @@ public class AllSort {
            while(i < j && a[i] <= key){
                i++;
            }
-           if( i < j){
+           if(i < j){
                int p = a[i];
                a[i] = a[j];
                a[j] = p;
@@ -43,6 +44,7 @@ public class AllSort {
        }
     }
 
+    //Heap Sort
     public void heapSort(int[] array){
         if(array == null || array.length <= 1){
             return;
