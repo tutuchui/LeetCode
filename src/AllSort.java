@@ -2,7 +2,7 @@ public class AllSort {
     public static void main(String[] args) {
         int[] array = {14,3,2,9,6,8,5};
         AllSort allSort = new AllSort();
-        allSort.heapSort(array);
+        allSort.selectionSort(array);
         allSort.printArray(array);
     }
 
@@ -12,9 +12,9 @@ public class AllSort {
         }
         System.out.println();
     }
-    //Quick Sort
+    /***************************Quick Sort***********************************/
     public void quickSort(int[] a, int low, int high){
-       if(low > high){
+       if(low >= high){
            return;
        }
        int i = low;
@@ -36,15 +36,14 @@ public class AllSort {
            }
 
            int p = a[i];
-           a[low] = a[i];
-           a[i] = p;
+           a[i] = a[low];
+           a[low] = p;
 
            quickSort(a,low,i-1);
            quickSort(a,i+1,high);
        }
     }
-
-    //Heap Sort
+    /********************************Heap Sort*****************************/
     public void heapSort(int[] array){
         if(array == null || array.length <= 1){
             return;
@@ -87,6 +86,84 @@ public class AllSort {
             maxHeap(array,heapSize,largest);
         }
     }
+    /************************ Merge Sort ****************************/
 
+    public void merge(int[] A, int p, int q, int r){
+        int n_1 = q - p + 1;
+        int n_2 = r - q;
+        int[] L = new int[n_1 + 1];
+        int[] R = new int[n_2 + 1];
+        for(int i = 0; i < n_1; i++){
+            L[i] = A[p+i];
+        }
+        for(int j = 0; j < n_2; j++){
+            R[j] = A[q+j+1];
+        }
+        L[n_1] = (int)Double.POSITIVE_INFINITY;
+        L[n_2] = (int)Double.POSITIVE_INFINITY;
+        int i = 0;
+        int j = 0;
+        for(int k = p; k <= r; k++){
+            if(L[i] <= R[j]){
+                A[k] = L[i];
+                i++;
+            }else{
+                A[k] = R[j];
+                j++;
+            }
+        }
+    }
+
+    public void sort(int[] A, int low, int high){
+        if(low < high){
+            int mid = low + (high - low)/2;
+            sort(A,low,mid);
+            sort(A,mid+1,high);
+            merge(A,low,mid,high);
+        }
+    }
+    /*****************************Insertion Sort*************************************/
+    public void insertionSort(int[] array){
+        for(int j = 1; j < array.length; j++){
+            int key = array[j];
+            int i = j - 1;
+            while(i >= 0 && array[i] > key){
+                array[i+1] = array[i];
+                i--;
+            }
+            array[i + 1] = key;
+        }
+    }
+    /********************Bubble Sort***************************/
+    public void bubbleSort(int[] array){
+        for(int i = array.length - 1; i > 0; i--){
+            for(int j = 0; j < i; j++){
+                if(array[j] > array[j+1]){
+                    int temp = array[j];
+                    array[j] = array[j+1];
+                    array[j+1] = temp;
+                }
+            }
+
+        }
+    }
+    /************************Selection Sort**********************/
+    public void selectionSort(int[] array){
+
+        for(int i = array.length - 1; i > 0; i--){
+            int greatPos = 0;
+            for(int j = 0; j <= i;j++){
+                if(array[j] >= array[greatPos]){
+                    greatPos = j;
+                }
+            }
+
+            if(greatPos != i){
+                int temp = array[i];
+                array[i] = array[greatPos];
+                array[greatPos] = temp;
+            }
+        }
+    }
 
 }

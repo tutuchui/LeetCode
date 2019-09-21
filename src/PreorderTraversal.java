@@ -1,18 +1,13 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Stack;
 
 public class PreorderTraversal {
 
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
+    //regression
 
-        TreeNode(int x) {
-            val = x;
-        }
-    }
-    public List<Integer> preorderTraversal(TreeNode root) {
+    public List<Integer> preorderTraversalReg(TreeNode root) {
         List<Integer> list = new ArrayList<>();
         preorder(root,list);
         return list;
@@ -30,5 +25,26 @@ public class PreorderTraversal {
         {
             preorder(node.right,list);
         }
+    }
+
+    //Iteration
+    public List<Integer> preorderTraversalIter(TreeNode root) {
+        Stack<TreeNode> stack = new Stack<>();
+        LinkedList<Integer> output = new LinkedList<>();
+        if(root == null){
+            return output;
+        }
+        stack.push(root);
+        while(!stack.isEmpty()){
+            TreeNode cur = stack.pop();
+            output.add(cur.val);
+            if(cur.right!=null){
+                stack.push(cur.right);
+            }
+            if(cur.left!=null){
+                stack.push(cur.left);
+            }
+        }
+        return output;
     }
 }
