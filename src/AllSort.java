@@ -1,10 +1,15 @@
 public class AllSort {
     public static void main(String[] args) {
-        int[] array = {14,3,2,9,6,8,5};
+        int[] array = {49,38,65,97,76,13,27,49};
         AllSort allSort = new AllSort();
-        allSort.selectionSort(array);
+//        allSort.selectionSort(array);
+//        allSort.printArray(array);
+        allSort.quickSort(array,0,array.length-1);
         allSort.printArray(array);
+
     }
+
+
 
     public void printArray(int[] array){
         for(int tmp : array){
@@ -22,26 +27,28 @@ public class AllSort {
 
        int key = a[low];
 
-       while(i < j){
-           while(i < j && a[j] > key){
+       while(i < j) {
+           while (i < j && a[j] > key) {
                j--;
            }
-           while(i < j && a[i] <= key){
+           while (i < j && a[i] <= key) {
                i++;
            }
-           if(i < j){
+           if (i < j) {
                int p = a[i];
                a[i] = a[j];
                a[j] = p;
            }
-
-           int p = a[i];
-           a[i] = a[low];
-           a[low] = p;
-
-           quickSort(a,low,i-1);
-           quickSort(a,i+1,high);
+           printArray(a);
        }
+
+       int p = a[i];
+       a[i] = a[low];
+       a[low] = p;
+       printArray(a);
+
+       quickSort(a,low,i-1);
+       quickSort(a,i+1,high);
     }
     /********************************Heap Sort*****************************/
     public void heapSort(int[] array){

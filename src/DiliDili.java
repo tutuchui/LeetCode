@@ -13,11 +13,13 @@ public class DiliDili extends BiliBili {
     private void b(){
         System.out.println("Child");
     }
-
+    
     public static void main(String[] args) {
         BiliBili b = new DiliDili();
         System.out.println(b.name);
+
 //        b.b();
 //        System.out.println((int) 3/2);
     }
+
 }

@@ -1,3 +1,5 @@
+package DP;
+
 public class DiceExp {
     public static void main(String[] args) {
         DiceExp diceExp = new DiceExp();

@@ -9,6 +9,9 @@ public class BiliBili {
         System.out.println("Father Normal");
     }
 
+    public static void B(){}
+
+
 
          public BiliBili(){
              System.out.println("Father Construct");
