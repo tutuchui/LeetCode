@@ -1,5 +1,7 @@
+package NewOffer;
+
 public class NewOffer4 {
-    public TreeNode reConstructBinaryTree(int [] pre,int [] in) {
+    public TreeNode reConstructBinaryTree(int [] pre, int [] in) {
        if(pre.length == 0){
            return null;
        }

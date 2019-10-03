@@ -1,3 +1,5 @@
+package NewOffer;
+
 public class NewOffer1 {
     public boolean Find(int target, int[][] array){
         int rows = array.length;

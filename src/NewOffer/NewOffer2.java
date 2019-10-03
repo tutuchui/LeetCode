@@ -1,3 +1,5 @@
+package NewOffer;
+
 public class NewOffer2 {
     public String replaceSpace(StringBuffer str) {
         for(int i = 0; i < str.length();){

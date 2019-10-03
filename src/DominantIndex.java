@@ -13,8 +13,6 @@ public class DominantIndex {
                     return i;
                 }
             }
-            StringBuilder sb = new StringBuilder("SS");
-
         }
         return -1;
 
