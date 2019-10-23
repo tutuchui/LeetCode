@@ -1,7 +1,11 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class DiliDili extends BiliBili {
     static {
         System.out.println("Child static");
     }
+
     {
         System.out.println("Child Normal");
     }
@@ -10,7 +14,8 @@ public class DiliDili extends BiliBili {
         System.out.println("Child construct");
     }
 
-    private void b(){
+    @Override
+    void b(){
         System.out.println("Child");
     }
     

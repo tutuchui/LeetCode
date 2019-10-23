@@ -62,7 +62,13 @@ public class ZConvert {
     }
 
     public static void main(String[] args) {
-        ZConvert zConvert = new ZConvert();
-        zConvert.convert("LEETCODEISHIRING",3);
+//        ZConvert zConvert = new ZConvert();
+//        zConvert.convert("LEETCODEISHIRING",3);
+        String a = "15";
+        StringBuilder b = new StringBuilder("123");
+        b.insert(0,'-');
+
+        System.out.println(b.toString());
+
     }
 }
