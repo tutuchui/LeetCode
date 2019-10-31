@@ -1,11 +1,25 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class AllSort {
     public static void main(String[] args) {
-        int[] array = {49,38,65,97,76,13,27,49};
+//        int[] array = {49,38,65,97,76,13,27,49};
         AllSort allSort = new AllSort();
-//        allSort.selectionSort(array);
+////        allSort.selectionSort(array);
+////        allSort.printArray(array);
+//        allSort.quickSort(array,0,array.length-1);
 //        allSort.printArray(array);
-        allSort.quickSort(array,0,array.length-1);
-        allSort.printArray(array);
+
+        List<PairInt> list = new ArrayList<>();
+        list.add(new PairInt(1,2));
+        list.add(new PairInt(2,3));
+        list.add(new PairInt(3,4));
+        list.add(new PairInt(3,6));
+        list.add(new PairInt(4,5));
+//        System.out.println(allSort.isNetworkConnected(list,5));
+        System.out.println(allSort.criticalConnections(6,5,list));
 
     }
 
@@ -172,5 +186,74 @@ public class AllSort {
             }
         }
     }
+    /*****************************************************************/
 
+
+    List<PairInt> criticalConnections(int numOfServers, int numOfConnections, List<PairInt> connections)
+    {
+        List<PairInt> result = new ArrayList<>();
+        for(int i = 0; i < connections.size(); i++){
+            List<PairInt> tmpCon = new ArrayList<>(connections);
+            tmpCon.remove(connections.get(i));
+            if(!isNetworkConnected(tmpCon,numOfServers)){
+                result.add(connections.get(i));
+            }
+
+        }
+        return result;
+    }
+
+     boolean isNetworkConnected(List<PairInt> connections,int numOfServer){
+        int[] parent = new int[numOfServer];
+        int[] rank = new int[numOfServer];
+        for(int i = 0; i < numOfServer; i++){
+            parent[i] = i;
+        }
+        for(int i = 0; i < connections.size(); i++){
+            union(connections.get(i).first -1 ,connections.get(i).second -1,parent,rank);
+        }
+        int tmp = parent[0];
+        for(int num : parent){
+            if(num!=tmp){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    int find(int p, int[] parent){
+        if(p != parent[p]){
+            parent[p] = parent[parent[p]];
+            p = parent[p];
+        }
+        return p;
+    }
+
+    void union(int p, int q, int[]parent, int[] rank){
+        int pRoot = find(p,parent);
+        int qRoot = find(q,parent);
+        if(pRoot == qRoot){
+            return;
+        }
+        if(rank[pRoot] >= rank[qRoot]){
+            parent[qRoot] = pRoot;
+            rank[pRoot] ++;
+        }else{
+            parent[pRoot] = qRoot;
+            rank[qRoot]++;
+        }
+    }
+
+}
+ class PairInt{
+    int first, second;
+    PairInt(int first, int second){
+        this.first = first;
+        this.second = second;
+    }
+
+    @Override
+    public String toString(){
+        return "(" + this.first + "," + this.second + ")";
+    }
 }
