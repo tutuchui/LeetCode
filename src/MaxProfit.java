@@ -1,4 +1,4 @@
-//Leetcode 122
+//Leetcode 121 & 122
 public class MaxProfit {
     public int maxProfit(int[] prices){
         if(prices.length <= 1){
@@ -20,5 +20,19 @@ public class MaxProfit {
             start = i;
         }
         return profit;
+    }
+
+    public int maxProfitTwo(int[] prices){
+        int min = Integer.MAX_VALUE;
+        int maxProfit = 0;
+        for(int i = 0; i < prices.length; i++){
+            if(prices[i] < min){
+                min = prices[i];
+            }
+            if(prices[i] - min > maxProfit){
+                maxProfit = prices[i] - min;
+            }
+        }
+        return maxProfit;
     }
 }
