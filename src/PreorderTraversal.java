@@ -21,8 +21,7 @@ public class PreorderTraversal {
         if(node.left != null ){
             preorder(node.left,list);
         }
-        if(node.right != null);
-        {
+        if(node.right!= null){
             preorder(node.right,list);
         }
     }

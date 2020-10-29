@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+
 public class ZConvert {
     public  String convert(String s, int numRows){
         if(s.length() == 0){
@@ -64,11 +67,13 @@ public class ZConvert {
     public static void main(String[] args) {
 //        ZConvert zConvert = new ZConvert();
 //        zConvert.convert("LEETCODEISHIRING",3);
-        String a = "15";
-        StringBuilder b = new StringBuilder("123");
-        b.insert(0,'-');
+//        String a = "15";
+//        StringBuilder b = new StringBuilder("123");
+//        b.insert(0,'-');
 
-        System.out.println(b.toString());
+//        System.out.println(b.toString());
+        ArrayList<Integer> list = null;
+        Iterator<Integer> iterator = list.iterator();
 
     }
 }
