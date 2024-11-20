@@ -1,4 +1,4 @@
-package DP;
+package dp;
 
 public class NumTrees {
     public int numTrees(int n) {

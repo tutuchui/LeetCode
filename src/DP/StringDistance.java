@@ -1,4 +1,4 @@
-package DP;
+package dp;
 
 public class StringDistance {
     public int minDistance(String word1, String word2) {

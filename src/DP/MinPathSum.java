@@ -1,4 +1,4 @@
-package DP;
+package dp;
 
 public class MinPathSum {
     public int minPathSum(int[][] grid) {

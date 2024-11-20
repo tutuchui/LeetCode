@@ -1,4 +1,4 @@
-package DP;
+package dp;
 
 public class NumDecodings {
     public int numDecodings(String s) {
