@@ -1,4 +1,5 @@
-package citilearning;
+package citilearning.java;
+
 //Leetcode 633
 public class JudgeSquareSum {
     public boolean judgeSquareSum(int c) {

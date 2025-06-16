@@ -1,5 +1,5 @@
-package citilearning;
-//Leetcode 3222
+package citilearning.java;
+
 public class FindWinningPlayerInCoinGame {
     public String losingPlayer(int x, int y) {
         int turn = 0;
