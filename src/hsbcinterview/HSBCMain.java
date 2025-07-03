@@ -7,16 +7,16 @@ public class HSBCMain {
             hsbcMessageSender.send();
         });
         sendThread.start();
-        HSBCRecevier hsbcRecevier = new HSBCRecevier();
+        HSBCMessageSender hsbcMessageSender1 = new HSBCMessageSender();
         Thread receiveThread = new Thread(() -> {
-            hsbcRecevier.receive();
+            hsbcMessageSender1.receive();
         });
         receiveThread.start();
-        HSBCMonitor hsbcMonitor = new HSBCMonitor();
-        Thread monitorThread = new Thread(() -> {
-            hsbcMonitor.monitor();
-        });
+//        HSBCMonitor hsbcMonitor = new HSBCMonitor();
+//        Thread monitorThread = new Thread(() -> {
+//            hsbcMonitor.monitor();
+//        });
 
-        monitorThread.start();
+//        monitorThread.start();
     }
 }
